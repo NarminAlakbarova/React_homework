@@ -1,10 +1,10 @@
 import React from "react";
 import User from "./User";
 
-const Users = ({ data }) => {
+const Users = ({ newData }) => {
   return (
     <div className="cards">
-      {data.map((obj) => {
+      {newData.map((obj) => {
         return <User key={obj.id} obj={obj} />;
       })}
     </div>
